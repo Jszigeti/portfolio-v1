@@ -6,7 +6,7 @@ export default function PresentationSection() {
   return (
     <section className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-around py-6 lg:py-8">
       <Image
-        src="/IMG_0064_carre_nb-removebg-preview.png"
+        src="/assets/portrait_js.webp"
         alt="Jonas picture"
         width={250}
         height={250}
@@ -33,7 +33,7 @@ export default function PresentationSection() {
           apporter des solutions créatives et efficaces à{" "}
           <span className="text-accent font-semibold">vos projets !</span>
         </p>
-        <Link href="/CV_Jonas_Szigeti.pdf" target="_blank">
+        <Link href="/assets/CV_Jonas_Szigeti.pdf" target="_blank">
           <Button content="VOIR MON CV" className="text-xl" />
         </Link>
       </div>
