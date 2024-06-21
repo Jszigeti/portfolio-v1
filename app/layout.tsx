@@ -5,7 +5,7 @@ import "./globals.css";
 // Components
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import ThemeProvider from "@/components/ThemeProvider";
+import ThemeProvider from "@/app/ThemeProvider";
 
 // Font
 const ibmPlexSans = IBM_Plex_Sans({

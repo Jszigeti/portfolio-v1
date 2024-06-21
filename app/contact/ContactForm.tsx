@@ -7,6 +7,7 @@ import Button from "@/components/Button";
 import Modal from "@/components/Modal";
 import { FaCheck, FaExclamationCircle } from "react-icons/fa";
 
+// formData type
 export type FormData = {
   firstName: string;
   lastName: string;
@@ -30,24 +31,26 @@ export default function ContactForm() {
   const lastNameValue = watch("lastName", "");
   const messageValue = watch("message", "");
 
-  // useState hook
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [modalTitle, setModalTitle] = useState("");
 
-  // Valid format for inputs
+  // Valid formats for inputs
   const isValidUserInput = (userInput: string) => userInput.trim().length > 0;
   const isValidEmail = emailValue.match(
     /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
   );
 
+  // Sending form values
   const onSubmit = async (data: FormData) => {
     const result = await sendEmail(data);
 
+    // Display the modal
     setModalTitle(result.success ? "Message envoyé" : "Erreur lors de l'envoi");
     setModalMessage(result.message);
     setShowModal(true);
 
+    // Reset inputs
     if (result.success) {
       reset();
     }
@@ -59,6 +62,7 @@ export default function ContactForm() {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col justify-center gap-8 py-6 lg:py-8 w-full lg:w-4/5"
         >
+          {/* First name input  */}
           <div className="flex gap-4 items-center w-full">
             <div className="relative w-1/2">
               <input
@@ -76,6 +80,8 @@ export default function ContactForm() {
                 <FaCheck className="absolute right-3 top-1/2 transform -translate-y-1/2 text-green-500" />
               ) : null}
             </div>
+
+            {/* Last name input */}
             <div className="relative w-1/2">
               <input
                 type="text"
@@ -93,6 +99,8 @@ export default function ContactForm() {
               ) : null}
             </div>
           </div>
+
+          {/* Email input */}
           <div className="relative">
             <input
               type="text"
@@ -115,6 +123,8 @@ export default function ContactForm() {
               <FaCheck className="absolute right-3 top-1/2 transform -translate-y-1/2 text-green-500" />
             ) : null}
           </div>
+
+          {/* Message input */}
           <div className="relative w-full">
             <textarea
               id="message"
@@ -130,9 +140,12 @@ export default function ContactForm() {
               <FaCheck className="absolute right-3 top-4 transform -translate-y-1/2 text-green-500" />
             ) : null}
           </div>
+
           <Button content="Envoyer" />
         </form>
       </section>
+
+      {/* Modal */}
       <Modal
         show={showModal}
         onClose={() => setShowModal(false)}

@@ -23,7 +23,7 @@ export default function FrontendSkills() {
           />
           <ReactIcon size="85px" className="fill-foreground" title="React" />
           <ReduxIcon size="85px" className="fill-foreground" title="Redux" />
-          <NextJSIcon size="85px" className="fill-foreground" title="Next JS" />
+          <NextJSIcon size="85px" className="fill-foreground" title="Next.js" />
           <TypescriptIcon
             size="85px"
             className="fill-foreground"
