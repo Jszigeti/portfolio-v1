@@ -6,7 +6,7 @@ import VSCodeIcon from "../../components/icons/VSCodeIcon";
 
 export default function ToolsSkills() {
   return (
-    <div className="container flex flex-col gap-10 py-6 lg:py-8">
+    <div className="flex flex-col gap-10 py-6 lg:py-8">
       <Collapse title="Outils de développement">
         <div className="flex flex-wrap gap-y-6 mt-6">
           <VSCodeIcon size="85px" className="fill-foreground" title="VS Code" />

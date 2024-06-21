@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 
 export default function PresentationSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-around py-6 lg:py-8">
+    <section className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-around py-6 lg:py-8 my-6 lg:my-8 lg:rounded-xl lg:shadow-xl">
       <Image
         src="/assets/portrait_js.webp"
         alt="Jonas picture"
@@ -20,7 +20,7 @@ export default function PresentationSection() {
             <span className="text-accent"> Szigeti</span>
           </h2>
         </div>
-        <p className="text-lg">
+        <p className="text-lg text-justify">
           Récemment reconverti en{" "}
           <span className="text-accent font-semibold">développeur web</span>, je
           suis passionné par la création d&apos;interfaces utilisateur modernes

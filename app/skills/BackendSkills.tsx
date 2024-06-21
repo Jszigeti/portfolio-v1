@@ -5,7 +5,7 @@ import TypescriptIcon from "../../components/icons/TypescriptIcon";
 
 export default function BackendSkills() {
   return (
-    <div className="container flex flex-col gap-10 py-6 lg:py-8">
+    <div className="flex flex-col gap-10 py-6 lg:py-8">
       <Collapse title="Back-end">
         <div className="flex flex-wrap gap-y-6 mt-6">
           <NodeJSIcon size="85px" className="fill-foreground" title="Node JS" />

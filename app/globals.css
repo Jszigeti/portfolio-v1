@@ -25,4 +25,18 @@
   body {
     @apply font-primary bg-primary text-foreground leading-loose;
   }
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: var(--primary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--primary);
+  }
 }

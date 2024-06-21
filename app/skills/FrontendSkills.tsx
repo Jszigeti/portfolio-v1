@@ -10,7 +10,7 @@ import TypescriptIcon from "../../components/icons/TypescriptIcon";
 
 export default function FrontendSkills() {
   return (
-    <div className="container flex flex-col gap-10 py-6 lg:py-8">
+    <div className="flex flex-col gap-10 py-6 lg:py-8">
       <Collapse title="Front-end">
         <div className="flex flex-wrap gap-y-6 mt-6">
           <HtmlIcon size="85px" className="fill-foreground" title="HTML 5" />

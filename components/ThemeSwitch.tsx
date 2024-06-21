@@ -28,7 +28,7 @@ const ThemeSwitch = () => {
     <div>
       <div
         onClick={toggleTheme}
-        className="border-2 border-accent rounded-full px-px hover:scale-105 active:scale-95 transform transition-transform duration-150 shadow-lg"
+        className="border-2 border-accent rounded-full px-px hover:scale-105 active:scale-95 transform transition-transform duration-150"
       >
         {theme === "light" ? <LightThemeIcon /> : <DarkThemeIcon />}
       </div>

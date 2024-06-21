@@ -44,13 +44,13 @@ export default function MobileNav() {
         <MobileNavIcon size="60px" />
       </div>
       <motion.div
-        initial={{ x: "100%" }}
-        animate={{ x: isOpen ? 0 : "100%" }}
+        initial={{ y: "-100%" }}
+        animate={{ y: isOpen ? 0 : "-100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 50 }}
-        className="fixed top-0 right-0 h-full w-72 bg-primary z-50 border-l-4 border-accent"
+        className="fixed top-0 right-0 w-full bottom-0 bg-primary shadow-2xl z-30"
       >
-        <div className="p-8 h-full">
-          <div className="flex justify-end">
+        <div>
+          <div className="flex justify-end pt-4 pr-4">
             <div
               onClick={toggleMenu}
               className="hover:scale-105 active:scale-95 transform transition-transform duration-150"
@@ -58,7 +58,7 @@ export default function MobileNav() {
               <ClosingIcon size="60px" />
             </div>
           </div>
-          <nav className="flex flex-col items-start gap-8">
+          <nav className="flex flex-col items-center gap-8">
             {links.map((link, index) => {
               return (
                 <Link
@@ -67,7 +67,7 @@ export default function MobileNav() {
                   onClick={toggleMenu}
                   className={`${
                     link.path === pathname && "text-accent"
-                  } font-medium text-lg hover:text-accent hover:scale-110 transform transition-transform duration-150`}
+                  } font-medium text-2xl hover:text-accent hover:scale-110 transform transition-transform duration-150`}
                 >
                   {link.name}
                 </Link>
@@ -79,7 +79,7 @@ export default function MobileNav() {
                 onClickFunction={toggleMenu}
                 className={`${
                   pathname === "/contact" && "bg-accent text-primary"
-                } text-lg`}
+                } text-2xl`}
               />
             </Link>
           </nav>

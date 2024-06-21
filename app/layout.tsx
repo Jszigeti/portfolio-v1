@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${ibmPlexSans.variable}`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
