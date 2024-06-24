@@ -4,6 +4,7 @@ import NextJSIcon from "../../components/icons/NextJSIcon";
 import NodeJSIcon from "../../components/icons/NodeJSIcon";
 import TypescriptIcon from "../../components/icons/TypescriptIcon";
 import PrismaIcon from "@/components/icons/PrismaIcon";
+import NginxIcon from "@/components/icons/NginxIcon";
 
 export default function BackendSkills() {
   return (
@@ -17,6 +18,7 @@ export default function BackendSkills() {
             className="fill-foreground"
             title="TypeScript"
           />
+          <NginxIcon size="85px" className="fill-foreground" title="Nginx" />
           <MysqlIcon
             size="85px"
             className="stroke-foreground fill-none"

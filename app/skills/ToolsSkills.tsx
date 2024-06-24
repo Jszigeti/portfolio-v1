@@ -1,3 +1,4 @@
+import UbuntuIcon from "@/components/icons/UbuntuIcon";
 import Collapse from "../../components/Collapse";
 import FigmaIcon from "../../components/icons/FigmaIcon";
 import GithubIcon from "../../components/icons/GithubIcon";
@@ -16,6 +17,7 @@ export default function ToolsSkills() {
             classNameFooterNav=""
             title="GitHub"
           />
+          <UbuntuIcon size="85px" className="fill-foreground" title="Ubuntu" />
           <PostmanIcon
             size="85px"
             className="fill-foreground"
