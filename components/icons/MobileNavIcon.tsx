@@ -10,9 +10,9 @@ export default function MobileNavIcon({ size }: { size: string }) {
         <path
           id="Vector"
           d="M12 17H19M5 12H19M5 7H19"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
     </svg>
