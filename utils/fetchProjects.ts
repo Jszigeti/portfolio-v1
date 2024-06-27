@@ -1,5 +1,7 @@
 export async function fetchProjects() {
-  const res = await fetch("http://localhost:3000/api/projects");
+  const apiEndpoint = "/api/projects";
+
+  const res = await fetch(apiEndpoint);
   if (!res.ok) {
     throw new Error("Erreur lors de la récupération des projets");
   }
