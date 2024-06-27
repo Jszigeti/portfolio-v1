@@ -2,7 +2,6 @@ export type Project = {
   id: number;
   title: string;
   cover_url: string;
-  medias_url: string[];
   description: string;
   stacks: string[];
   features: string[];

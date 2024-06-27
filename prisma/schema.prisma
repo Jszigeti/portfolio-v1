@@ -17,20 +17,12 @@ model Project {
   id                    Int       @id @default(autoincrement())
   title                 String
   cover_url             String
-  // medias_url            Media[]
   description           String
   stacks                Stack[]
   features              Feature[]
   project_link          String
   repo_link             String
  }
-
-//  model Media {
-//   id        Int       @id @default(autoincrement())
-//   img_url   String
-//   project   Project   @relation(fields: [projectId], references: [id])
-//   projectId Int
-//  }
 
   model Stack {
   id        Int       @id @default(autoincrement())
