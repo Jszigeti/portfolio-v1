@@ -4,8 +4,8 @@ export default function PrismaIcon({
   title,
 }: {
   size: string;
-  className: string;
-  title: string;
+  className?: string;
+  title?: string;
 }) {
   return (
     <div className="flex flex-col gap-4 items-center w-1/3">

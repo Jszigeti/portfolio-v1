@@ -6,14 +6,7 @@ import { sendEmail } from "@/utils/sendEmail";
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
 import { FaCheck, FaExclamationCircle } from "react-icons/fa";
-
-// formData type
-export type FormData = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  message: string;
-};
+import { FormData } from "@/types/formData";
 
 export default function ContactForm() {
   // useForm hook
@@ -55,6 +48,7 @@ export default function ContactForm() {
       reset();
     }
   };
+
   return (
     <>
       <section className="flex justify-center py-6 lg:py-8">

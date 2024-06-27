@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import Button from "./Button";
 import LightThemeIcon from "./icons/LightThemeIcon";
-import DarkThemeIcon from "./DarkThemeIcon";
+import DarkThemeIcon from "./icons/DarkThemeIcon";
 
 const ThemeSwitch = () => {
   const { theme, setTheme } = useTheme();

@@ -11,12 +11,7 @@ export default function ToolsSkills() {
       <Collapse title="Outils de développement">
         <div className="flex flex-wrap gap-y-6 mt-6">
           <VSCodeIcon size="85px" className="fill-foreground" title="VS Code" />
-          <GithubIcon
-            size="85px"
-            className="fill-foreground"
-            classNameFooterNav=""
-            title="GitHub"
-          />
+          <GithubIcon size="85px" className="fill-foreground" title="GitHub" />
           <UbuntuIcon size="85px" className="fill-foreground" title="Ubuntu" />
           <PostmanIcon
             size="85px"

@@ -14,22 +14,23 @@ datasource db {
 }
 
 model Project {
-  id        Int       @id @default(autoincrement())
-  title     String
-  cover     String
-  imgs      Img[]
-  desc      String
-  stacks    Stack[]
-  feat      Features[]
-  link      String
+  id                    Int       @id @default(autoincrement())
+  title                 String
+  cover_url             String
+  // medias_url            Media[]
+  description           String
+  stacks                Stack[]
+  features              Feature[]
+  project_link          String
+  repo_link             String
  }
 
- model Img {
-  id        Int       @id @default(autoincrement())
-  img       String
-  project   Project   @relation(fields: [projectId], references: [id])
-  projectId Int
- }
+//  model Media {
+//   id        Int       @id @default(autoincrement())
+//   img_url   String
+//   project   Project   @relation(fields: [projectId], references: [id])
+//   projectId Int
+//  }
 
   model Stack {
   id        Int       @id @default(autoincrement())
@@ -38,7 +39,7 @@ model Project {
   projectId Int
  }
 
-  model Features {
+  model Feature {
   id        Int       @id @default(autoincrement())
   feature   String
   project   Project   @relation(fields: [projectId], references: [id])

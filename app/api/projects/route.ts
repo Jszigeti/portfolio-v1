@@ -8,14 +8,20 @@ export async function GET(req: NextRequest, res: NextResponse) {
     select: {
       id: true,
       title: true,
-      cover: true,
-      imgs: true,
-      desc: true,
+      cover_url: true,
+      // medias_url: true,
+      description: true,
       stacks: true,
-      feat: true,
-      link: true,
+      features: true,
+      project_link: true,
+      repo_link: true,
     },
   });
 
-  return NextResponse.json({ projects }, { status: 200 });
+  try {
+    await prisma.project.findMany();
+    return NextResponse.json({ projects }, { status: 200 });
+  } catch (err) {
+    return NextResponse.json({ error: err }, { status: 500 });
+  }
 }

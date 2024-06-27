@@ -5,9 +5,9 @@ export default function LinkedInIcon({
   title,
 }: {
   size: string;
-  className: string;
-  classNameFooterNav: string;
-  title: string;
+  className?: string;
+  classNameFooterNav?: string;
+  title?: string;
 }) {
   return (
     <div
