@@ -12,7 +12,7 @@ export default function Card({ project }: CardProp) {
       <a className="relative block rounded-lg overflow-hidden border border-gray-200 hover:border-gray-300 transition duration-300">
         <div className="aspect-w-1 aspect-h-1">
           <Image
-            src={project.cover}
+            src={project.cover_url}
             alt={`${project.title} pict`}
             layout="fill"
             objectFit="cover"
