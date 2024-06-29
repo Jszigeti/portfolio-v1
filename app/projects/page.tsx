@@ -1,11 +1,14 @@
 "use client";
 
+import Card from "@/components/Card";
+import LoadingAnimation from "@/components/LoadingAnimation";
 import { Project } from "@/types/project";
 import { fetchProjects } from "@/utils/fetchProjects";
 import { useEffect, useState } from "react";
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProjectsAsync = async () => {
@@ -14,6 +17,8 @@ export default function Projects() {
         setProjects(res.projects);
       } catch (error) {
         console.error("Erreur :", error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchProjectsAsync();
@@ -24,13 +29,17 @@ export default function Projects() {
       <h2 className="text-5xl font-bold text-accent text-center lg:text-left">
         Projets
       </h2>
-      <ul>
-        {projects.length > 0 ? (
-          projects.map((project) => <li key={project.id}>{project.title}</li>)
-        ) : (
-          <li>Aucun projet disponible</li>
-        )}
-      </ul>
+      {loading ? (
+        <div className="flex justify-center items-center">
+          <LoadingAnimation />
+        </div>
+      ) : (
+        <div className="flex flex-wrap justify-center gap-6 gap-y-6 mt-6">
+          {projects.map((project) => (
+            <Card project={project} key={project.id} />
+          ))}
+        </div>
+      )}
     </main>
   );
 }

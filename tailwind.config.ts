@@ -30,18 +30,15 @@ const config = {
         accent: "var(--accent)",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        bounce: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.5)" },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        bounce: "bounce 1s infinite",
+        "bounce-delay-200": "bounce 1s infinite 0.2s",
+        "bounce-delay-400": "bounce 1s infinite 0.4s",
       },
     },
   },

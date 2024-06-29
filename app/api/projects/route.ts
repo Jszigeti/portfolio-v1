@@ -9,11 +9,13 @@ export async function GET(req: NextRequest, res: NextResponse) {
       id: true,
       title: true,
       cover_url: true,
+      medias_url: true,
       description: true,
       stacks: true,
-      features: true,
+      objectives: true,
       project_link: true,
       repo_link: true,
+      slug: true,
     },
   });
 

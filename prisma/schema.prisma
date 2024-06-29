@@ -17,23 +17,33 @@ model Project {
   id                    Int       @id @default(autoincrement())
   title                 String
   cover_url             String
+  medias_url            Media[]
   description           String
   stacks                Stack[]
-  features              Feature[]
+  objectives            Objective[]
   project_link          String
   repo_link             String
+  slug                  String    @unique
+  createdAt             DateTime  @default(now())
  }
 
-  model Stack {
+   model Media {
   id        Int       @id @default(autoincrement())
-  stack     String
+  url       String
   project   Project   @relation(fields: [projectId], references: [id])
   projectId Int
  }
 
-  model Feature {
+  model Stack {
   id        Int       @id @default(autoincrement())
-  feature   String
+  name      String
+  project   Project   @relation(fields: [projectId], references: [id])
+  projectId Int
+ }
+
+  model Objective {
+  id        Int       @id @default(autoincrement())
+  name      String
   project   Project   @relation(fields: [projectId], references: [id])
   projectId Int
  }

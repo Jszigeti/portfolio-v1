@@ -7,9 +7,11 @@ import Button from "./Button";
 export default function Collapse({
   children,
   title,
+  className,
 }: {
   children: React.ReactNode;
   title: string;
+  className?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +19,7 @@ export default function Collapse({
     setIsOpen((isOpen) => !isOpen);
   };
   return (
-    <div>
+    <div className={className}>
       <div>
         <button
           onClick={toggleCollapse}
