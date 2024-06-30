@@ -4,8 +4,7 @@ CREATE TABLE `Project` (
     `title` VARCHAR(191) NOT NULL,
     `cover_url` VARCHAR(191) NOT NULL,
     `description` VARCHAR(191) NOT NULL,
-    `project_link` VARCHAR(191) NOT NULL,
-    `repo_link` VARCHAR(191) NOT NULL,
+    `link` VARCHAR(191) NOT NULL,
     `slug` VARCHAR(191) NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
 

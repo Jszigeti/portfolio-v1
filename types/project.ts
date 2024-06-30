@@ -6,8 +6,7 @@ export type Project = {
   description: string;
   stacks: Array<Stack>;
   objectives: Array<Objective>;
-  project_link: string;
-  repo_link: string;
+  link: string;
   slug: string;
 };
 

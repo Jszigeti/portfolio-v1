@@ -13,9 +13,11 @@ export async function GET(req: NextRequest, res: NextResponse) {
       description: true,
       stacks: true,
       objectives: true,
-      project_link: true,
-      repo_link: true,
+      link: true,
       slug: true,
+    },
+    orderBy: {
+      createdAt: "desc",
     },
   });
 
