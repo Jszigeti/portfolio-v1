@@ -47,11 +47,10 @@ export default function Slidder({ project }: SlidderProp) {
       </button>
       <div className="relative w-full h-full">
         {project.medias_url.map((media: Media, index: number) => (
-          <Image
+          <img
             src={media.url}
             alt={media.url}
             key={media.id}
-            fill={true}
             className={`absolute w-full h-full object-cover transition-transform duration-300 ease-in-out ${
               slide === index
                 ? "translate-x-0"
