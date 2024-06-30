@@ -11,14 +11,14 @@ export default function Card({ project }: CardProp) {
     <Link
       href={`/projects/${project.slug}`}
       key={project.id}
-      className="relative block rounded-lg overflow-hidden hover:scale-105 active:scale-95 transition duration-300 w-full md:w-5/12 shadow-lg h-60 sm:h-72 md:h-48 lg:h-64 xl:h-80"
+      className="relative block rounded-lg overflow-hidden hover:scale-105 active:scale-95 transition duration-300 w-full md:w-5/12 shadow-lg"
     >
       <div>
-        <Image
+        <img
           src={project.cover_url}
           alt={`${project.title} picture`}
           className="rounded-lg object-cover"
-          fill={true}
+          width="100%"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-primary via-gray-400 to-transparent opacity-75 transition duration-300"></div>
