@@ -34,7 +34,7 @@ export default function Projects() {
           <LoadingAnimation />
         </div>
       ) : (
-        <div className="flex flex-wrap justify-center gap-6 gap-y-6 mt-6">
+        <div className="flex flex-col justify-center gap-6 md:gap-10 lg:gap-14 mt-6">
           {projects.map((project) => (
             <Card project={project} key={project.id} />
           ))}

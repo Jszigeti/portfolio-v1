@@ -11,7 +11,7 @@ export default function Card({ project }: CardProp) {
     <Link
       href={`/projects/${project.slug}`}
       key={project.id}
-      className="relative block rounded-lg overflow-hidden hover:scale-105 active:scale-95 transition duration-300 w-full md:w-5/12 shadow-lg"
+      className="relative block rounded-lg overflow-hidden hover:scale-105 active:scale-95 transition duration-300 w-full shadow-lg"
     >
       <div>
         <img
@@ -21,7 +21,7 @@ export default function Card({ project }: CardProp) {
           width="100%"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-primary via-gray-400 to-transparent opacity-75 transition duration-300"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-75 transition duration-300"></div>
       <div className="absolute inset-0 flex items-end px-4 py-2">
         <h2 className="text-accent text-lg font-semibold">{project.title}</h2>
       </div>

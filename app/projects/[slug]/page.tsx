@@ -8,6 +8,7 @@ import LoadingAnimation from "@/components/LoadingAnimation";
 import Collapse from "@/components/Collapse";
 import Button from "@/components/Button";
 import Slidder from "@/components/Slidder";
+import { SlArrowLeft } from "react-icons/sl";
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const [project, setProject] = useState<Project | null>(null);
@@ -38,6 +39,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </div>
       ) : project ? (
         <section className="flex flex-col gap-6">
+          <Link
+            href="/projects"
+            className="text-xl lg:hidden flex gap-4 items-center font-semibold"
+          >
+            <SlArrowLeft /> Retour aux projets
+          </Link>
           <h2 className="text-5xl font-bold text-accent text-center lg:text-left">
             {project.title}
           </h2>
@@ -74,7 +81,13 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <p className="text-justify">{project.description}</p>
             <div className="flex justify-center lg:justify-start mt-4">
               <Link href={project.link} target="_blank">
-                <Button content="Ouvrir le projet" />
+                <Button
+                  content={`${
+                    project.link.includes("github")
+                      ? "Voir le repository"
+                      : "Voir le projet"
+                  }`}
+                />
               </Link>
             </div>
           </div>
