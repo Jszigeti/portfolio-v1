@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+
+// Components
 import Button from "../../components/Button";
 
 export default function PresentationSection() {

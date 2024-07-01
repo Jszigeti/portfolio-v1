@@ -1,4 +1,4 @@
-import Image from "next/image";
+// Components
 import JavascriptIcon from "../../components/icons/JavascriptIcon";
 import ReactIcon from "../../components/icons/ReactIcon";
 import TailwindIcon from "../../components/icons/TailwindIcon";

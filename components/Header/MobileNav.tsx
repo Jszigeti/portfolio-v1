@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { links } from "./Nav";
 
 // Components
 import MobileNavIcon from "../icons/MobileNavIcon";
@@ -11,38 +12,30 @@ import ClosingIcon from "../icons/ClosingIcon";
 import Button from "../Button";
 import ThemeSwitch from "../ThemeSwitch";
 
-const links = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "Skills",
-    path: "/skills",
-  },
-  {
-    name: "Projets",
-    path: "/projects",
-  },
-];
-
 export default function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false);
+  // Using usePathname to retrieve the active page
   const pathname = usePathname();
 
+  // State managing the opening and closing of the menu
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Menu opening and closing function
   const toggleMenu = () => {
     setIsOpen((isOpen) => !isOpen);
   };
 
   return (
     <div className="lg:hidden flex items-center gap-2">
+      {/* Theme control button */}
       <ThemeSwitch />
+      {/* Menu open button */}
       <div
         onClick={toggleMenu}
         className="hover:scale-105 active:scale-95 transform transition-transform duration-150"
       >
         <MobileNavIcon size="60px" />
       </div>
+      {/* Menu animation */}
       <motion.div
         initial={{ y: "-100%" }}
         animate={{ y: isOpen ? 0 : "-100%" }}
@@ -51,6 +44,7 @@ export default function MobileNav() {
       >
         <div>
           <div className="flex justify-end pt-4 pr-4">
+            {/* Menu close button */}
             <div
               onClick={toggleMenu}
               className="hover:scale-105 active:scale-95 transform transition-transform duration-150"
@@ -59,6 +53,7 @@ export default function MobileNav() {
             </div>
           </div>
           <nav className="flex flex-col items-center gap-8">
+            {/* Generating links */}
             {links.map((link, index) => {
               return (
                 <Link
@@ -73,6 +68,7 @@ export default function MobileNav() {
                 </Link>
               );
             })}
+            {/* Contact button */}
             <Link href="/contact">
               <Button
                 content="Me contacter"

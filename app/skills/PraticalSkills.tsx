@@ -1,3 +1,4 @@
+// Components
 import Collapse from "../../components/Collapse";
 import AgileIcon from "../../components/icons/AgileIcon";
 import DebugIcon from "../../components/icons/DebugIcon";

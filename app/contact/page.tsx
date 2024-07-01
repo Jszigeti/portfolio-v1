@@ -1,3 +1,4 @@
+// Components
 import ContactForm from "./ContactForm";
 
 export default function Contact() {

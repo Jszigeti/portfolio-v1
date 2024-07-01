@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Button from "./Button";
 
 export default function Collapse({
   children,
@@ -13,14 +12,17 @@ export default function Collapse({
   title: string;
   className?: string;
 }) {
+  // State managing the opening and closing of the collapse
   const [isOpen, setIsOpen] = useState(false);
 
+  // Collapse opening and closing function
   const toggleCollapse = () => {
     setIsOpen((isOpen) => !isOpen);
   };
   return (
     <div className={className}>
       <div>
+        {/* Collapse opening and closing button */}
         <button
           onClick={toggleCollapse}
           className={`${
@@ -31,6 +33,7 @@ export default function Collapse({
           <p className="text-3xl font-bold">{isOpen ? "-" : "+"}</p>
         </button>
       </div>
+      {/* Collapse animation */}
       <motion.div
         initial={false}
         animate={{ height: isOpen ? "auto" : 0 }}

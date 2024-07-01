@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
+// Retrieving projects from the database
 export async function GET(req: NextRequest, res: NextResponse) {
   const projects = await prisma.project.findMany({
     select: {
@@ -16,6 +17,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
       link: true,
       slug: true,
     },
+    // Sort from newest to oldest
     orderBy: {
       createdAt: "desc",
     },

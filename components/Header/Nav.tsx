@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+// Components
 import Button from "../Button";
 import ThemeSwitch from "../ThemeSwitch";
 
-const links = [
+export const links = [
   {
     name: "Home",
     path: "/",
@@ -21,9 +23,12 @@ const links = [
 ];
 
 export default function Nav() {
+  // Using usePathname to retrieve the active page
   const pathname = usePathname();
+
   return (
     <nav className="hidden lg:flex items-center gap-8">
+      {/* Generating links */}
       {links.map((link, index) => {
         return (
           <Link
@@ -37,6 +42,7 @@ export default function Nav() {
           </Link>
         );
       })}
+      {/* Contact button */}
       <Link href="/contact">
         <Button
           content="Me contacter"
@@ -45,6 +51,7 @@ export default function Nav() {
           } text-lg`}
         />
       </Link>
+      {/* Theme control button */}
       <ThemeSwitch />
     </nav>
   );

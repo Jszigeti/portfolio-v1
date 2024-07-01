@@ -1,3 +1,4 @@
+// Components
 import MysqlIcon from "@/components/icons/Mysqlcon";
 import Collapse from "../../components/Collapse";
 import NextJSIcon from "../../components/icons/NextJSIcon";

@@ -1,15 +1,18 @@
 "use client";
 
-import Card from "@/components/Card";
-import LoadingAnimation from "@/components/LoadingAnimation";
-import { Project } from "@/types/project";
-import { fetchProjects } from "@/utils/fetchProjects";
 import { useEffect, useState } from "react";
+import { fetchProjects } from "@/utils/fetchProjects";
+import { Project } from "@/types/project";
+
+// Components
+import CardList from "@/components/CardList";
+import LoadingAnimation from "@/components/LoadingAnimation";
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // Retrieving projects
   useEffect(() => {
     const fetchProjectsAsync = async () => {
       try {
@@ -29,15 +32,15 @@ export default function Projects() {
       <h2 className="text-5xl font-bold text-accent text-center lg:text-left">
         Projets
       </h2>
+      {/* Shows a loading animation while projects load */}
       {loading ? (
         <div className="flex justify-center items-center">
           <LoadingAnimation />
         </div>
       ) : (
-        <div className="flex flex-col justify-center gap-6 md:gap-10 lg:gap-14 mt-6">
-          {projects.map((project) => (
-            <Card project={project} key={project.id} />
-          ))}
+        <div>
+          {/* Generate the list of cards */}
+          <CardList projects={projects} />
         </div>
       )}
     </main>

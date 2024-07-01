@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaCheck, FaExclamationCircle } from "react-icons/fa";
 import { sendEmail } from "@/utils/sendEmail";
+import { FormData } from "@/types/formData";
+
+// Components
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
-import { FaCheck, FaExclamationCircle } from "react-icons/fa";
-import { FormData } from "@/types/formData";
 
 export default function ContactForm() {
   // useForm hook
@@ -24,6 +26,7 @@ export default function ContactForm() {
   const lastNameValue = watch("lastName", "");
   const messageValue = watch("message", "");
 
+  // States concerning the modal
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [modalTitle, setModalTitle] = useState("");

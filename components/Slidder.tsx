@@ -7,9 +7,11 @@ type SlidderProp = {
 };
 
 export default function Slidder({ project }: SlidderProp) {
+  // States managing the current slide and the transition
   const [slide, setSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+  // Function to display the next slide
   function nextSlide() {
     if (!isTransitioning) {
       setIsTransitioning(true);
@@ -22,6 +24,7 @@ export default function Slidder({ project }: SlidderProp) {
     }
   }
 
+  // Function to display the previous slide
   function prevSlide() {
     if (!isTransitioning) {
       setIsTransitioning(true);
@@ -36,6 +39,7 @@ export default function Slidder({ project }: SlidderProp) {
 
   return (
     <section className="relative mx-auto flex items-center justify-center h-72 sm:h-96 lg:h-[32rem] xl:h-[40rem] mb-6 w-full overflow-hidden rounded-xl shadow-xl">
+      {/* Previous slide button */}
       <button
         onClick={prevSlide}
         className={`absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 z-20 text-accent text-3xl md:text-5xl font-bold ${
@@ -45,6 +49,7 @@ export default function Slidder({ project }: SlidderProp) {
         <SlArrowLeft />
       </button>
       <div className="relative w-full h-full">
+        {/* Generation of slider images */}
         {project.medias_url.map((media: Media, index: number) => (
           <img
             src={media.url}
@@ -60,6 +65,7 @@ export default function Slidder({ project }: SlidderProp) {
           />
         ))}
       </div>
+      {/* Next slide button */}
       <button
         className={`absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-20 text-accent text-3xl md:text-5xl ${
           project.medias_url.length < 2 ? "hidden" : ""
@@ -68,6 +74,7 @@ export default function Slidder({ project }: SlidderProp) {
       >
         <SlArrowRight />
       </button>
+      {/* Bullet points indicating the current slide */}
       <div className="absolute bottom-5 flex space-x-2">
         {project.medias_url.map((_, index) => (
           <div

@@ -1,3 +1,4 @@
+// Components
 import UbuntuIcon from "@/components/icons/UbuntuIcon";
 import Collapse from "../../components/Collapse";
 import FigmaIcon from "../../components/icons/FigmaIcon";

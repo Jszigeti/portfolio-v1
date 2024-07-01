@@ -1,6 +1,5 @@
-import { Project } from "@/types/project";
-import Image from "next/image";
 import Link from "next/link";
+import { Project } from "@/types/project";
 
 type CardProp = {
   project: Project;
@@ -8,6 +7,7 @@ type CardProp = {
 
 export default function Card({ project }: CardProp) {
   return (
+    // Generating links based on the slug
     <Link
       href={`/projects/${project.slug}`}
       key={project.id}

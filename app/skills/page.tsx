@@ -1,3 +1,4 @@
+// Components
 import BackendSkills from "./BackendSkills";
 import FrontendSkills from "./FrontendSkills";
 import PraticalSkills from "./PraticalSkills";
