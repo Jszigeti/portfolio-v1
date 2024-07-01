@@ -19,6 +19,22 @@ export const metadata: Metadata = {
   title: "Jonas Szigeti - Développeur web",
   description:
     "Développeur web sur le Calvados, pour vous accompagner dans tous vos projets !",
+  openGraph: {
+    title: "Jonas Szigeti - Développeur web",
+    description:
+      "Développeur web sur le Calvados, pour vous accompagner dans tous vos projets !",
+    url: "https://jsproject.fr/",
+    siteName: "Jsproject",
+    images: [
+      {
+        url: "https://jsproject.fr/assets/portfolio.png",
+        width: 1200,
+        height: 627,
+      },
+    ],
+    locale: "fr",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
