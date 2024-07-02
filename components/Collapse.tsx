@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import CollapseButton from "./CollapseButton";
 
 export default function Collapse({
   children,
@@ -27,10 +28,11 @@ export default function Collapse({
           onClick={toggleCollapse}
           className={`${
             isOpen && "bg-accent text-primary scale-105"
-          } hover:scale-105 active:scale-95 transform transition-transform duration-150 border-2 border-accent whitespace-nowrap h-16 rounded-md px-8 text-foreground text-xl md:text-3xl font-bold w-full flex items-center justify-between hover:bg-accent hover:text-primary shadow-lg`}
+          } hover:scale-105 active:scale-95 transform transition-all duration-300 border-2 border-accent whitespace-nowrap h-16 rounded-md px-8 text-accent text-xl md:text-3xl font-bold w-full flex items-center justify-between shadow-lg`}
         >
           <p>{title}</p>
-          <p className="text-3xl font-bold">{isOpen ? "-" : "+"}</p>
+          <CollapseButton isOpen={isOpen} />
+          {/* <p className="text-3xl font-bold">{isOpen ? "-" : "+"}</p> */}
         </button>
       </div>
       {/* Collapse animation */}

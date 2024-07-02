@@ -12,14 +12,14 @@ export default function FooterNav() {
         target="_blank"
       >
         <LinkedInIcon
-          size="30px"
-          classNameFooterNav="fill-foreground hover:fill-accent hover:scale-110 active:scale-95 transform transition-transform duration-150 shadow-lg"
+          size="35px"
+          classNameFooterNav="fill-foreground hover:fill-accent hover:scale-110 active:scale-95 transform transition-transform duration-300 shadow-lg"
         />
       </Link>
       <Link href="https://github.com/Jszigeti" target="_blank">
         <GithubIcon
-          size="30px"
-          classNameFooterNav="fill-foreground hover:fill-accent hover:scale-110 active:scale-95 transform transition-transform duration-150 shadow-lg"
+          size="35px"
+          classNameFooterNav="fill-foreground hover:fill-accent hover:scale-110 active:scale-95 transform transition-transform duration-300 shadow-lg"
         />
       </Link>
     </div>

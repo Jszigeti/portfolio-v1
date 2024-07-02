@@ -32,7 +32,7 @@ export default function ThemeSwitch() {
       {/* Theme change button */}
       <div
         onClick={toggleTheme}
-        className="border-2 border-accent rounded-full px-px hover:scale-105 active:scale-95 transform transition-transform duration-150"
+        className="border-2 border-accent rounded-full px-px hover:scale-105 active:scale-95 transform transition-transform duration-300"
       >
         {theme === "light" ? <LightThemeIcon /> : <DarkThemeIcon />}
       </div>

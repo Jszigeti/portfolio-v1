@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -27,7 +25,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden lg:flex items-center gap-8">
+    <nav className="hidden md:flex items-center gap-6 lg:gap-8">
       {/* Generating links */}
       {links.map((link, index) => {
         return (
@@ -36,7 +34,7 @@ export default function Nav() {
             href={link.path}
             className={`${
               link.path === pathname && "text-accent border-b-2 border-accent"
-            } font-medium text-lg hover:text-accent hover:scale-110 transform transition-transform duration-150`}
+            } font-medium text-lg hover:text-accent hover:scale-110 transform transition-transform duration-300`}
           >
             {link.name}
           </Link>
