@@ -45,7 +45,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <section className="flex flex-col gap-6">
           <Link
             href="/projects"
-            className="text-xl lg:hidden flex gap-4 items-center font-semibold"
+            className="text-xl md:hidden flex gap-4 items-center font-semibold"
           >
             <SlArrowLeft /> Retour aux projets
           </Link>
