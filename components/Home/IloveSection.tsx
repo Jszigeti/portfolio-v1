@@ -1,7 +1,7 @@
 // Components
-import JavascriptIcon from "../../components/icons/JavascriptIcon";
-import ReactIcon from "../../components/icons/ReactIcon";
-import TailwindIcon from "../../components/icons/TailwindIcon";
+import JavascriptIcon from "../icons/JavascriptIcon";
+import ReactIcon from "../icons/ReactIcon";
+import TailwindIcon from "../icons/TailwindIcon";
 
 export default function IloveSection() {
   return (

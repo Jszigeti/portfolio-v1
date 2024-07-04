@@ -1,9 +1,9 @@
 // Components
-import Collapse from "../../components/Collapse";
-import AgileIcon from "../../components/icons/AgileIcon";
-import DebugIcon from "../../components/icons/DebugIcon";
-import ProjectManagementIcon from "../../components/icons/ProjectManagementIcon";
-import SeoIcon from "../../components/icons/SeoIcon";
+import Collapse from "../Collapse";
+import AgileIcon from "../icons/AgileIcon";
+import DebugIcon from "../icons/DebugIcon";
+import ProjectManagementIcon from "../icons/ProjectManagementIcon";
+import SeoIcon from "../icons/SeoIcon";
 
 export default function PraticalSkills() {
   return (

@@ -1,6 +1,6 @@
 // Components
-import PresentationSection from "@/app/home/PresentationSection";
-import IloveSection from "@/app/home/IloveSection";
+import PresentationSection from "@/components/Home/PresentationSection";
+import IloveSection from "@/components/Home/IloveSection";
 
 export default function Home() {
   return (

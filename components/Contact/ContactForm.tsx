@@ -43,7 +43,7 @@ export default function ContactForm() {
 
     // Display the modal
     setModalTitle(result.success ? "Message envoyé" : "Erreur lors de l'envoi");
-    setModalMessage(result.message);
+    setModalMessage(result.success ? result.message : result.error);
     setShowModal(true);
 
     // Reset inputs

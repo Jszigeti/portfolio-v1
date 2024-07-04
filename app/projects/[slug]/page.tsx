@@ -8,9 +8,9 @@ import { Objective, Project, Stack } from "@/types/project";
 
 // Components
 import LoadingAnimation from "@/components/LoadingAnimation";
-import Collapse from "@/components/Collapse";
 import Button from "@/components/Button";
-import Slidder from "@/components/Slidder";
+import Collapse from "@/components/Collapse";
+import Slidder from "@/components/Projects/Slidder";
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const [project, setProject] = useState<Project | null>(null);
@@ -100,7 +100,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
         </section>
       ) : (
-        // Display of the message "Projet non trouvé" if it's impossible to retrieve the projects from the database
+        // Display of the message "Projet non trouvé" if it's impossible to retrieve the project from the database
         <div className="flex justify-center items-center">
           <p>Projet non trouvé.</p>
         </div>

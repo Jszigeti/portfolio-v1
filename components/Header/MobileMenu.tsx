@@ -12,6 +12,7 @@ export default function MobileMenu({ toggleMenu, isOpen }: MobileNavProps) {
   const pathname = usePathname();
 
   return (
+    // Menu animation
     <motion.div
       initial={{ height: 0 }}
       animate={{ height: isOpen ? "100vh" : 0 }} // Subtract header height
@@ -21,6 +22,7 @@ export default function MobileMenu({ toggleMenu, isOpen }: MobileNavProps) {
       }`}
     >
       <nav className="flex flex-col items-center gap-8 p-4">
+        {/* Generating links */}
         {links.map((link, index) => (
           <Link
             key={index}
@@ -33,6 +35,7 @@ export default function MobileMenu({ toggleMenu, isOpen }: MobileNavProps) {
             {link.name}
           </Link>
         ))}
+        {/* Contact button */}
         <Link href="/contact">
           <Button
             content="Me contacter"

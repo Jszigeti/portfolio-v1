@@ -9,7 +9,7 @@ import DarkThemeIcon from "./icons/DarkThemeIcon";
 
 export default function ThemeSwitch() {
   // States managing the applied theme and managing the rehydration error (server and client difference)
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   // Handling the rehydration error (server and client difference)
@@ -19,13 +19,9 @@ export default function ThemeSwitch() {
   if (!mounted) return null;
 
   // Toggle theme function
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+  function toggleTheme() {
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
+  }
 
   return (
     <div>
@@ -34,7 +30,7 @@ export default function ThemeSwitch() {
         onClick={toggleTheme}
         className="border-2 border-accent rounded-full px-px hover:scale-105 active:scale-95 transform transition-transform duration-300"
       >
-        {theme === "light" ? <LightThemeIcon /> : <DarkThemeIcon />}
+        {resolvedTheme === "light" ? <LightThemeIcon /> : <DarkThemeIcon />}
       </div>
     </div>
   );

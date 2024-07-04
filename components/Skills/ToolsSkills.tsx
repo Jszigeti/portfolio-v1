@@ -1,10 +1,10 @@
 // Components
 import UbuntuIcon from "@/components/icons/UbuntuIcon";
-import Collapse from "../../components/Collapse";
-import FigmaIcon from "../../components/icons/FigmaIcon";
-import GithubIcon from "../../components/icons/GithubIcon";
-import PostmanIcon from "../../components/icons/PostmanIcon";
-import VSCodeIcon from "../../components/icons/VSCodeIcon";
+import Collapse from "../Collapse";
+import FigmaIcon from "../icons/FigmaIcon";
+import GithubIcon from "../icons/GithubIcon";
+import PostmanIcon from "../icons/PostmanIcon";
+import VSCodeIcon from "../icons/VSCodeIcon";
 
 export default function ToolsSkills() {
   return (

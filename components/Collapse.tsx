@@ -23,7 +23,7 @@ export default function Collapse({
   return (
     <div className={className}>
       <div>
-        {/* Collapse opening and closing button */}
+        {/* Collapse title and opening button */}
         <button
           onClick={toggleCollapse}
           className={`${
@@ -32,7 +32,6 @@ export default function Collapse({
         >
           <p>{title}</p>
           <CollapseButton isOpen={isOpen} />
-          {/* <p className="text-3xl font-bold">{isOpen ? "-" : "+"}</p> */}
         </button>
       </div>
       {/* Collapse animation */}
@@ -41,7 +40,8 @@ export default function Collapse({
         animate={{ height: isOpen ? "auto" : 0 }}
         className="overflow-hidden"
       >
-        <div>{children}</div>
+        {/* Collapse content */}
+        {children}
       </motion.div>
     </div>
   );

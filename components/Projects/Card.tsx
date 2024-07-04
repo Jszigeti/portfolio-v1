@@ -7,7 +7,7 @@ type CardProp = {
 
 export default function Card({ project }: CardProp) {
   return (
-    // Generating links based on the slug
+    // Generating link based on the slug
     <Link
       href={`/projects/${project.slug}`}
       key={project.id}

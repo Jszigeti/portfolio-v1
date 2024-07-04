@@ -5,8 +5,8 @@ import { fetchProjects } from "@/utils/fetchProjects";
 import { Project } from "@/types/project";
 
 // Components
-import CardList from "@/components/CardList";
 import LoadingAnimation from "@/components/LoadingAnimation";
+import CardList from "@/components/Projects/CardList";
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -37,10 +37,15 @@ export default function Projects() {
         <div className="flex justify-center items-center">
           <LoadingAnimation />
         </div>
-      ) : (
+      ) : projects ? (
         <div>
           {/* Generate the list of cards */}
           <CardList projects={projects} />
+        </div>
+      ) : (
+        // Display of the message "Projets non trouvés" if it's impossible to retrieve the projects from the database
+        <div className="flex justify-center items-center">
+          <p>Projets non trouvés.</p>
         </div>
       )}
     </main>

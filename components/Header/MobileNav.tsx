@@ -7,13 +7,10 @@ import MenuButton from "../MenuButton";
 export default function MobileNav({ toggleMenu, isOpen }: MobileNavProps) {
   return (
     <div className="md:hidden flex items-center gap-2">
+      {/* Theme control button */}
       <ThemeSwitch />
-      <div
-        onClick={toggleMenu}
-        className="hover:scale-105 active:scale-95 transform transition-transform duration-300"
-      >
-        <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
-      </div>
+      {/* Button to open the menu */}
+      <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
     </div>
   );
 }

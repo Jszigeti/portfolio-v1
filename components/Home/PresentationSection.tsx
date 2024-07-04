@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // Components
-import Button from "../../components/Button";
+import Button from "../Button";
 
 export default function PresentationSection() {
   return (

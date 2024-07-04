@@ -3,7 +3,7 @@ import { MobileNavProps } from "@/types/MobileNavProps";
 export default function MenuButton({ toggleMenu, isOpen }: MobileNavProps) {
   return (
     <button
-      className="flex flex-col items-center justify-center w-12 h-12 p-2 font-bold gap-2"
+      className="flex flex-col items-center justify-center w-12 h-12 p-2 font-bold gap-2 hover:scale-105 active:scale-95 transform transition-transform duration-300"
       onClick={toggleMenu}
     >
       <span

@@ -1,8 +1,8 @@
 // Components
-import BackendSkills from "./BackendSkills";
-import FrontendSkills from "./FrontendSkills";
-import PraticalSkills from "./PraticalSkills";
-import ToolsSkills from "./ToolsSkills";
+import BackendSkills from "../../components/Skills/BackendSkills";
+import FrontendSkills from "../../components/Skills/FrontendSkills";
+import PraticalSkills from "../../components/Skills/PraticalSkills";
+import ToolsSkills from "../../components/Skills/ToolsSkills";
 
 export default function Skills() {
   return (

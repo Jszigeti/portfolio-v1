@@ -1,13 +1,13 @@
 // Components
-import Collapse from "../../components/Collapse";
-import CssIcon from "../../components/icons/CssIcon";
-import HtmlIcon from "../../components/icons/HtmlIcon";
-import JavascriptIcon from "../../components/icons/JavascriptIcon";
-import NextJSIcon from "../../components/icons/NextJSIcon";
-import ReactIcon from "../../components/icons/ReactIcon";
-import ReduxIcon from "../../components/icons/ReduxIcon";
-import SassIcon from "../../components/icons/SassIcon";
-import TypescriptIcon from "../../components/icons/TypescriptIcon";
+import Collapse from "../Collapse";
+import CssIcon from "../icons/CssIcon";
+import HtmlIcon from "../icons/HtmlIcon";
+import JavascriptIcon from "../icons/JavascriptIcon";
+import NextJSIcon from "../icons/NextJSIcon";
+import ReactIcon from "../icons/ReactIcon";
+import ReduxIcon from "../icons/ReduxIcon";
+import SassIcon from "../icons/SassIcon";
+import TypescriptIcon from "../icons/TypescriptIcon";
 
 export default function FrontendSkills() {
   return (

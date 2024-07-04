@@ -1,9 +1,9 @@
 // Components
 import MysqlIcon from "@/components/icons/Mysqlcon";
-import Collapse from "../../components/Collapse";
-import NextJSIcon from "../../components/icons/NextJSIcon";
-import NodeJSIcon from "../../components/icons/NodeJSIcon";
-import TypescriptIcon from "../../components/icons/TypescriptIcon";
+import Collapse from "../Collapse";
+import NextJSIcon from "../icons/NextJSIcon";
+import NodeJSIcon from "../icons/NodeJSIcon";
+import TypescriptIcon from "../icons/TypescriptIcon";
 import PrismaIcon from "@/components/icons/PrismaIcon";
 import NginxIcon from "@/components/icons/NginxIcon";
 

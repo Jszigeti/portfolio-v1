@@ -3,7 +3,7 @@ import { Project } from "@/types/project";
 
 // Componentss
 import Card from "./Card";
-import Button from "./Button";
+import Button from "../Button";
 
 type CardListProps = {
   projects: Project[];
