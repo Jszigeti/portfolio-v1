@@ -110,7 +110,7 @@ export default function ContactForm() {
                 required: true,
                 pattern: {
                   value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                  message: "Format d'adresse e-mail invalide",
+                  message: "",
                 },
               })}
             />
@@ -129,7 +129,7 @@ export default function ContactForm() {
               className={`w-full h-60 bg-primary text-accent border-b font-semibold focus:outline-none focus:border-b-2 pr-10 ${
                 errors.message ? "border-red-500" : "border-accent"
               }`}
-              {...register("message", { required: "Le message est requis" })}
+              {...register("message", { required: true })}
             />
             {errors.message ? (
               <FaExclamationCircle className="absolute right-3 top-4 transform -translate-y-1/2 text-red-500" />

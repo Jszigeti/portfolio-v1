@@ -38,7 +38,7 @@ export default function Slidder({ project }: SlidderProp) {
   }
 
   return (
-    <section className="relative mx-auto flex items-center justify-center h-72 sm:h-96 lg:h-[32rem] xl:h-[40rem] mb-6 w-full overflow-hidden rounded-xl shadow-xl">
+    <section className="relative flex items-center justify-center h-[19rem] md:h-[23rem] lg:h-[29rem] xl:h-[37rem] mb-6 w-full overflow-hidden rounded-xl shadow-xl">
       {/* Previous slide button */}
       <button
         onClick={prevSlide}
@@ -48,14 +48,14 @@ export default function Slidder({ project }: SlidderProp) {
       >
         <SlArrowLeft />
       </button>
-      <div className="relative w-full h-full">
+      <div className="w-full h-full">
         {/* Generation of slider images */}
         {project.medias_url.map((media: Media, index: number) => (
           <img
             src={media.url}
             alt={media.url}
             key={media.id}
-            className={`absolute w-full h-full object-cover transition-transform duration-300 ease-in-out ${
+            className={`absolute h-full object-cover transition-transform duration-300 ease-in-out ${
               slide === index
                 ? "translate-x-0"
                 : slide < index

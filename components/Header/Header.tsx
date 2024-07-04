@@ -9,8 +9,10 @@ import MobileNav from "./MobileNav";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
+  // State managing the opening and closing of the MobileMenu
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  // Function to modify the state of the MobileMenu
   const toggleMenu = (): void => {
     setIsOpen(!isOpen);
   };

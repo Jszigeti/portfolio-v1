@@ -44,7 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={`${ibmPlexSans.variable}`}>
+      <body
+        className={`${ibmPlexSans.variable} flex flex-col justify-between min-h-svh`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
