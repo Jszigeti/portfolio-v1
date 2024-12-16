@@ -15,24 +15,27 @@ export default function PresentationSection() {
       />
       <div className="flex flex-col lg:w-1/2 gap-8">
         <div>
-          <p className="font-bold text-lg">Développeur web</p>
+          <p className="font-bold text-lg">Développeur Full Stack</p>
           <h2 className=" text-5xl font-bold">
             Jonas
             <span className="text-accent"> Szigeti</span>
           </h2>
         </div>
         <p className="text-lg text-justify">
-          Récemment reconverti en{" "}
-          <span className="text-accent font-semibold">développeur web</span>, je
-          suis passionné par la création d&apos;interfaces utilisateur modernes
-          et intuitives.
-          <br />
-          Mon objectif est de transformer des concepts innovants en expériences
-          numériques attrayantes et performantes.
-          <br />
-          Toujours à l&apos;affût des dernières tendances, je suis prêt à
-          apporter des solutions créatives et efficaces à{" "}
-          <span className="text-accent font-semibold">vos projets !</span>
+          <span className="text-accent font-semibold">
+            Développeur Full Stack & DevOps
+          </span>
+          , passionné par la création d&apos;applications modernes et scalables,
+          j&apos;allie créativité et rigueur technique pour transformer des
+          concepts innovants en solutions numériques performantes. Grâce à une
+          expertise en React, TypeScript, NestJS et une approche centrée sur la
+          Clean Architecture, je conçois des interfaces intuitives et des
+          backends robustes, prêts à évoluer avec vos besoins. Curieux et
+          toujours à l&apos;écoute des dernières tendances, je suis prêt à
+          relever vos défis techniques et à vous accompagner dans{" "}
+          <span className="text-accent font-semibold">
+            la réalisation de vos projets ambitieux.
+          </span>
         </p>
         <Link href="/assets/CV_Jonas_Szigeti.pdf" target="_blank">
           <Button content="VOIR MON CV" className="text-xl" />

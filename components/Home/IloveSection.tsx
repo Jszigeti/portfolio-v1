@@ -1,7 +1,9 @@
 // Components
 import JavascriptIcon from "../icons/JavascriptIcon";
+import NestJSIcon from "../icons/NestJSIcon";
 import ReactIcon from "../icons/ReactIcon";
 import TailwindIcon from "../icons/TailwindIcon";
+import TypescriptIcon from "../icons/TypescriptIcon";
 
 export default function IloveSection() {
   return (
@@ -11,15 +13,11 @@ export default function IloveSection() {
       </h3>
       <div className="flex justify-around">
         <ReactIcon size="85px" className="fill-foreground" title="React" />
-        <JavascriptIcon
+        <NestJSIcon size="85px" className="fill-foreground" title="NestJS" />
+        <TypescriptIcon
           size="85px"
           className="fill-foreground"
-          title="JavaScript"
-        />
-        <TailwindIcon
-          size="85px"
-          className="fill-foreground"
-          title="Tailwind"
+          title="TypeScript"
         />
       </div>
     </section>
