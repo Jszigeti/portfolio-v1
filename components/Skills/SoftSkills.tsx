@@ -10,7 +10,7 @@ import SolvingIcon from "../icons/SolvingIcon";
 export default function SoftSkills() {
   return (
     <div className="flex flex-col gap-10 py-6 lg:py-8">
-      <Collapse title="Développement">
+      <Collapse title="Soft skills">
         <div className="flex flex-wrap gap-y-6 mt-6">
           <AgileIcon size="85px" className="fill-foreground" title="Agile" />
           <CommunicationIcon
