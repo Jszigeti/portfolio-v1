@@ -16,18 +16,18 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 // Metadata
 export const metadata: Metadata = {
-  title: "Jonas Szigeti - Développeur web",
+  title: "Jonas Szigeti - Développeur Full stack",
   description:
-    "Développeur web sur le Calvados, pour vous accompagner dans tous vos projets !",
+    "Développeur Full Stack sur le Calvados, pour vous accompagner dans tous vos projets !",
   openGraph: {
-    title: "Jonas Szigeti - Développeur web",
+    title: "Jonas Szigeti - Développeur Full Stack",
     description:
-      "Développeur web sur le Calvados, pour vous accompagner dans tous vos projets !",
+      "Développeur Full Stack sur le Calvados, pour vous accompagner dans tous vos projets !",
     url: "https://jsproject.fr/",
     siteName: "Jsproject",
     images: [
       {
-        url: "https://jsproject.fr/assets/portfolio.png",
+        url: "https://jsproject.fr/assets/portfolio-preview.png",
         width: 1200,
         height: 627,
       },
