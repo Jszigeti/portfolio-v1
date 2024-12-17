@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Jsproject",
     images: [
       {
-        url: "https://jsproject.fr/assets/portfolio-preview.png",
+        url: "https://jsproject.fr/assets/portfolio-preview.webp",
         width: 1200,
         height: 627,
       },
