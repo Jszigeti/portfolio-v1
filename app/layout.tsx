@@ -35,6 +35,20 @@ export const metadata: Metadata = {
     locale: "fr",
     type: "website",
   },
+  generator: "Next.js",
+  manifest: "/manifest.json",
+  keywords: ["nextjs", "nextjs14", "next14", "pwa", "next-pwa"],
+  authors: [
+    { name: "Alldo Faiz Ramadhani" },
+    {
+      name: "Alldo Faiz Ramadhani",
+      url: "https://www.linkedin.com/in/alldofaiz/",
+    },
+  ],
+  icons: [
+    { rel: "apple-touch-icon", url: "icons/icon-128x128.png" },
+    { rel: "icon", url: "icons/icon-128x128.png" },
+  ],
 };
 
 export default function RootLayout({
