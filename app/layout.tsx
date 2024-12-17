@@ -39,10 +39,10 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   keywords: ["nextjs", "nextjs14", "next14", "pwa", "next-pwa"],
   authors: [
-    { name: "Alldo Faiz Ramadhani" },
+    { name: "Jonas Szigeti" },
     {
-      name: "Alldo Faiz Ramadhani",
-      url: "https://www.linkedin.com/in/alldofaiz/",
+      name: "Jonas Szigeti",
+      url: "https://www.linkedin.com/in/jonas-szigeti/",
     },
   ],
   icons: [

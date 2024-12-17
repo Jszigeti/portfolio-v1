@@ -1,7 +1,7 @@
 {
-  "name": "JS Project",
+  "name": "Jsproject",
   "short_name": "JSP",
-  "description": "JS Project PWA",
+  "description": "Jsproject PWA",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
