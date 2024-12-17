@@ -1,7 +1,7 @@
 {
-  "name": "Jsproject",
-  "short_name": "JSP",
-  "description": "Jsproject PWA",
+  "name": "Jonas Szigeti - Développeur Full stack",
+  "short_name": "Jsproject",
+  "description": "Version PWA du portfolio de Jonas Szigeti",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
