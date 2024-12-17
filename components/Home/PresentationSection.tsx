@@ -2,17 +2,15 @@ import Link from "next/link";
 
 // Components
 import Button from "../Button";
-import Image from "next/image";
 
 export default function PresentationSection() {
   return (
     <section className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-around py-6 lg:py-8 my-6 lg:my-8 lg:rounded-xl lg:shadow-xl">
-      <Image
+      <img
         src="/assets/portrait_js.webp"
         alt="Jonas picture"
         width={250}
         height={250}
-        priority={true}
         className="rounded-full border-solid border-b-4 border-r-4 border-accent"
       />
       <div className="flex flex-col lg:w-1/2 gap-8">

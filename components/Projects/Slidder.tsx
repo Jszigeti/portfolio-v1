@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { Media, Project } from "@/types/project";
-import Image from "next/image";
 
 type SlidderProp = {
   project: Project;
@@ -52,7 +51,7 @@ export default function Slidder({ project }: SlidderProp) {
       <div className="w-full h-full">
         {/* Generation of slider images */}
         {project.medias_url.map((media: Media, index: number) => (
-          <Image
+          <img
             src={media.url}
             alt={media.url}
             key={media.id}
