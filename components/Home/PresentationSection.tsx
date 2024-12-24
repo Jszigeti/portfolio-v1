@@ -25,32 +25,33 @@ export default function PresentationSection() {
           <span className="text-accent font-semibold">
             Développeur Full Stack & DevOps
           </span>
-          , passionné par la création d&apos;applications{" "}
-          <span className="text-accent font-semibold">modernes</span> et{" "}
-          <span className="text-accent font-semibold">scalables</span>,
-          j&apos;allie créativité et rigueur technique pour transformer des
-          concepts innovants en solutions numériques performantes.{" "}
+          , je suis avant tout un passionné par le développement web et la
+          création de solutions numériques utiles et accessibles. J&apos;aime
+          transformer des idées en applications{" "}
+          <span className="text-accent font-semibold">modernes</span>,{" "}
+          <span className="text-accent font-semibold">intuitives</span> et{" "}
+          <span className="text-accent font-semibold">scalables</span>.
         </p>
         <p className="text-lg text-justify">
-          Grâce à une expertise en{" "}
+          Fort d&apos;une expertise en{" "}
           <span className="text-accent font-semibold">React</span>,{" "}
           <span className="text-accent font-semibold">TypeScript</span>,{" "}
-          <span className="text-accent font-semibold">NestJS</span> et une
-          approche centrée sur la{" "}
+          <span className="text-accent font-semibold">NestJS</span>, et
+          d&apos;une approche basée sur la{" "}
           <span className="text-accent font-semibold">Clean Architecture</span>,
-          je conçois des interfaces intuitives et des backends robustes, prêts à
-          évoluer avec{" "}
+          je conçois des interfaces ergonomiques et des backends fiables, pensés
+          pour s&apos;adapter à{" "}
           <span className="text-accent font-semibold">vos besoins</span>.
         </p>
         <p className="text-lg text-justify">
-          Curieux et toujours à l&apos;écoute des dernières tendances, je suis
-          prêt à relever vos{" "}
+          Toujours curieux et en veille sur les évolutions technologiques,
+          j&apos;aime relever des{" "}
           <span className="text-accent font-semibold">défis techniques</span> et
-          à vous accompagner dans{" "}
-          <span className="text-accent font-semibold">
-            la réalisation de vos projets ambitieux.
-          </span>
+          m&apos;investir dans des projets ambitieux. Mon objectif ? Vous
+          accompagner pour donner vie à vos idées, tout en garantissant qualité
+          et performance.
         </p>
+
         <Link href="/assets/CV_Jonas_Szigeti.pdf" target="_blank">
           <Button content="VOIR MON CV" className="text-xl" />
         </Link>
