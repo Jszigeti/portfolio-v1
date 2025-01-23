@@ -16,18 +16,18 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 // Metadata
 export const metadata: Metadata = {
-  title: "Jonas Szigeti - Développeur web",
+  title: "Jonas Szigeti - Développeur Full stack",
   description:
-    "Développeur web sur le Calvados, pour vous accompagner dans tous vos projets !",
+    "Développeur Full Stack sur le Calvados, pour vous accompagner dans tous vos projets !",
   openGraph: {
-    title: "Jonas Szigeti - Développeur web",
+    title: "Jonas Szigeti - Développeur Full Stack",
     description:
-      "Développeur web sur le Calvados, pour vous accompagner dans tous vos projets !",
+      "Développeur Full Stack sur le Calvados, pour vous accompagner dans tous vos projets !",
     url: "https://jsproject.fr/",
     siteName: "Jsproject",
     images: [
       {
-        url: "https://jsproject.fr/assets/portfolio.png",
+        url: "https://jsproject.fr/assets/portfolio-preview.webp",
         width: 1200,
         height: 627,
       },
@@ -35,6 +35,20 @@ export const metadata: Metadata = {
     locale: "fr",
     type: "website",
   },
+  generator: "Next.js",
+  manifest: "/manifest.json",
+  keywords: ["nextjs", "nextjs14", "next14", "pwa", "next-pwa"],
+  authors: [
+    { name: "Jonas Szigeti" },
+    {
+      name: "Jonas Szigeti",
+      url: "https://www.linkedin.com/in/jonas-szigeti/",
+    },
+  ],
+  icons: [
+    { rel: "apple-touch-icon", url: "icons/icon-128x128.png" },
+    { rel: "icon", url: "icons/icon-128x128.png" },
+  ],
 };
 
 export default function RootLayout({

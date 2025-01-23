@@ -1,8 +1,7 @@
 // Components
-import BackendSkills from "../../components/Skills/BackendSkills";
-import FrontendSkills from "../../components/Skills/FrontendSkills";
-import PraticalSkills from "../../components/Skills/PraticalSkills";
-import ToolsSkills from "../../components/Skills/ToolsSkills";
+import DevelopmentSkills from "@/components/Skills/DevelopmentSkills";
+import DevOpsAndToolsSkills from "@/components/Skills/DevOpsAndToolsSkills";
+import SoftSkills from "@/components/Skills/SoftSkills";
 
 export default function Skills() {
   return (
@@ -10,10 +9,9 @@ export default function Skills() {
       <h2 className="text-5xl font-bold text-accent text-center lg:text-left">
         Skills
       </h2>
-      <FrontendSkills />
-      <BackendSkills />
-      <ToolsSkills />
-      <PraticalSkills />
+      <DevelopmentSkills />
+      <DevOpsAndToolsSkills />
+      <SoftSkills />
     </main>
   );
 }
