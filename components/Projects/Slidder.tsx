@@ -38,7 +38,7 @@ export default function Slidder({ project }: SlidderProp) {
   }
 
   return (
-    <section className="relative flex items-center justify-center h-[19rem] md:h-[23rem] lg:h-[29rem] xl:h-[37rem] mb-6 w-full overflow-hidden rounded-xl shadow-xl">
+    <section className="relative flex items-center justify-center aspect-[16/9] mb-6 w-full overflow-hidden rounded-xl shadow-xl">
       {/* Previous slide button */}
       <button
         onClick={prevSlide}
@@ -55,6 +55,10 @@ export default function Slidder({ project }: SlidderProp) {
             src={media.url}
             alt={media.url}
             key={media.id}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "auto", height: "100%" }}
             className={`absolute h-full object-cover transition-transform duration-300 ease-in-out ${
               slide === index
                 ? "translate-x-0"
